@@ -9,7 +9,6 @@ import LocationList from './components/LocationsList.js'
 import EpisodeList from './components/EpisodeList.js'
 
 
-
 export default function App() {
   return <main>
     <Header />
