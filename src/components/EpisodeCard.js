@@ -17,7 +17,7 @@ import {Button} from "semantic-ui-react"
 
 // 
 
-function PeopleCard(props) {
+function EpisodeCard(props) {
 
 console.log('props', props)
 
@@ -25,9 +25,9 @@ return(
 
 <div>
 
-<img src={props.person.image} alt=""/>
-<p>name: {props.person.name}</p>
-<p>status: {props.person.status}</p>
+<img src={props.episode.image} alt=""/>
+<p>name: {props.episode.name}</p>
+<p>status: {props.episode.status}</p>
 {/* <Button>Click Me</Button> */}
 <Button Click Me />
 </div>
@@ -36,4 +36,4 @@ return(
 
 }
 
-export default PeopleCard; 
+export default EpisodeCard; 

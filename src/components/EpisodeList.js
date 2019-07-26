@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios"
 
-export default function CharacterList() {
+export default function EpisodeList() {
   // TODO: Add useState to track data from useEffect
-  const [persondata, setData] = useState();
+  const [episodeData, setData] = useState();
   useEffect(() => {
     console.log("first render")
-    axios.get('https://rickandmortyapi.com/api/character/')
+    axios.get('https://rickandmortyapi.com/api/episode/')
     .then(res => {
       console.log(res.data);
       //setData(res.data.results);
     });
     }, [])
-    if(!persondata){
+    if(!episodeData){
      return <h1>Loading...</h1>
     }else{
       return (
@@ -20,10 +20,10 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
    
 
-   <section className='character-list grid-view'>
+   <section className='episode-list grid-view'>
 
-    {persondata.map((person) =>  person={person})};
-      
+      {episodeData.map((episode) =>  episode={episode})};
+     
     </section>
       
       );
