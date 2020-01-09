@@ -1,5 +1,27 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components'
+import {Button} from "semantic-ui-react"
 
-export default function CharacterCard ({ /* add props */ }) {
-  return (<span>todo: location</span>
+
+
+function PeopleCard(props) {
+
+console.log('props', props)
+
+return(
+
+<div>
+
+<img src={props.person.image} alt=""/>
+<p>name: {props.person.name}</p>
+<p>status: {props.person.status}</p>
+
+{/* <Button>Click Me</Button> */}
+<Button Click Me />
+</div>
+
+)
+
 }
+
+export default PeopleCard; 
